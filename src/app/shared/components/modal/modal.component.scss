@@ -1,0 +1,31 @@
+@import 'src/styles/_positions.scss';
+
+.wrapper {
+   top: 0;
+   left: 0;
+   z-index: 999;
+   width: 100vw;
+   height: 100vh;
+   position: fixed;
+   @include align-c;
+   background-color: #000000cb;
+
+   .modal {
+      width: 35%;
+      height: 600px;
+      border-radius: 20px;
+      background-color: white;
+
+      .banner {
+         height: 15%;
+         padding: 0 25px;
+         @include align-b;
+
+         fa-icon {
+            color: grey;
+            cursor: pointer;
+            font-size: 1.8rem;
+         }
+      }
+   }
+}
