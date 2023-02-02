@@ -1,0 +1,22 @@
+<div class="wrapper">
+   <div class="vibe" *ngFor="let vibe of vibes">
+      <div class="content">
+         <div class="title">
+            <h1>{{ vibe.title }}</h1>
+         </div>
+         <div class="quote">
+            <h2>{{ vibe.quote }}</h2>
+         </div>
+         <div class="author">
+            <fa-icon (click)="openModal()" [icon]="edition"></fa-icon>
+            <h3>{{ vibe.author }}</h3>
+            <fa-icon [icon]="delete"></fa-icon>
+         </div>
+      </div>
+   </div>
+</div>
+
+<app-modal 
+   (modalClosed)="modalClosed($event)" 
+   [isOpened]="isModalOpened">
+</app-modal>
