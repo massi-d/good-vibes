@@ -1,0 +1,28 @@
+@mixin align-s() {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+
+@mixin align-c() {
+   display: flex;
+   align-items: center;
+   justify-content: center
+}
+
+@mixin align-e() {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+
+@mixin align-b() {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+@mixin grid-2() {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
