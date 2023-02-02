@@ -1,0 +1,14 @@
+@import 'src/styles/_positions.scss';
+
+.wrapper {
+   width: 100vw;
+   height: 100vh;
+   @include align-c;
+   position: relative;
+
+   .home {
+      width: 1140px;
+      height: 600px;
+      @include grid-2;
+   }
+}

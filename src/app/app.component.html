@@ -1,0 +1,8 @@
+<div class="wrapper" [style.overflow]="scroll">
+   <div class="home">
+      <app-profile></app-profile>
+      <app-vibe (modalStatus)="modalStatus($event)"></app-vibe>
+   </div>
+</div>
+
+<router-outlet></router-outlet>
