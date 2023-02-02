@@ -1,0 +1,15 @@
+<form [class.white-style]="whiteStyle" (submit)="submit()" [formGroup]="vibeForm" *ngIf="isFormVisible" class="form">
+   <div>
+      <p>Titre :</p>
+      <input maxlength="13" formControlName="title" type="text">
+      <p *ngIf="this.vibeForm.value.title.length > 12" class="error">Vous avez dépasser les 12 caractères</p>
+   </div>
+   <div>
+      <p>Citation :</p>
+      <textarea formControlName="quote"></textarea>
+   </div>
+   <div class="buttons-wrapper">
+      <button class="submit" type="submit" [disabled]="!vibeForm.valid">Submit</button>
+      <button class="cancel" (click)="cancel()">Cancel</button>
+   </div>
+</form>

@@ -1,0 +1,90 @@
+.form {
+   display: flex;
+   flex-direction: column;
+   transform: rotateY(180deg);
+   justify-content: space-evenly;
+
+   div {
+      display: flex;
+      position: relative;
+      margin-bottom: 30px;
+      flex-direction: column;
+
+      p {
+         text-align: left;
+         font-size: 1rem;
+         margin-bottom: 5px;
+      }
+
+      input,
+      textarea {
+         width: 100%;
+         resize: none;
+         outline: none;
+         padding: 12px;
+         font-size: 1rem;
+         color: #ffbbff;
+         border-radius: 10px;
+         border: 1px solid #ff41ff;
+         background-color: transparent;
+      }
+
+      textarea {
+         height: 100px;
+      }
+
+      .error {
+         bottom: -22px;
+         font-size: 0.7rem;
+         color: #ff8cff;
+         position: absolute;
+      }
+   }
+
+   .buttons-wrapper {
+      display: flex;
+      margin-bottom: 0;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+
+      button {
+         width: 48%;
+         border: none;
+         padding: 14px;
+         color: white;
+         cursor: pointer;
+         font-size: 1.1rem;
+         border-radius: 10px;
+         transition: 0.2s ease;
+
+         &:disabled {
+            color: #cacaca60;
+            background-color: #8c8c8c60;
+         }
+      }
+
+      .submit {
+         background-color: #4e004e;
+      }
+
+      .cancel {
+         background-color: #8f8f8f;
+      }
+   }
+}
+
+.white-style {
+   input, textarea {
+      color: #970097 !important;
+      border-color: #bc00bc !important;
+   }
+
+   .error {
+      color: #d256d2 !important;
+   }
+
+   button:disabled {
+      color: #5d5d5d82 !important;
+   }
+}
