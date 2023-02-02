@@ -1,0 +1,33 @@
+@import "src/styles/_positions.scss";
+
+.profile {
+   width: 35%;
+   height: 210px;
+   position: fixed;
+   color: #3f3f3f;
+   @include align-c;
+   border-radius: 20px;
+   box-sizing: border-box;
+   border: 1px solid #dadada;
+
+   .content {
+      width: 75%;
+      
+      .idendity {
+         @include align-s;
+
+         .image {
+            width: 70px;
+            height: 70px;
+            margin-right: 25px;
+            border-radius: 50%;
+            background-color: #dadada;
+         }
+      }
+
+      .score {
+         @include align-b;
+         margin-top: 35px;
+      }
+   }
+}
